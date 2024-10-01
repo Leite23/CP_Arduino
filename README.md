@@ -17,3 +17,9 @@ Sensor de Luz (LDR): Capta a intensidade luminosa do ambiente.
 LEDs Vermelho, Amarelo e Verde: Indicam visualmente os diferentes níveis de luminosidade.
 Buzzer: Emite um som para alertar o usuário sobre níveis de luminosidade críticos.
 Resistores: Utilizados para limitar a corrente nos LEDs e no buzzer.
+
+##
+# Membros:
+Guilherme Leite - RM560131
+Miguel Aguiar - RM559589
+Fernando - RM
