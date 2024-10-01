@@ -17,31 +17,32 @@ void loop() {
   int valorLido = analogRead(A0);
   valor = map(valorLido, 0, 1023, 0, 100);
   delay(100);
+  Serial.println(valor);
 
-  if(valor<40) {
+  if(valor<15) {
     digitalWrite(ledR, HIGH);
     digitalWrite(ledA, LOW);
     digitalWrite(ledV, LOW);
-    tone(buzzer,300);
-    delay(500);
-    noTone(buzzer);
-    delay(500);
     Serial.println("Alta luminosidade");
-    delay(2000);
+    delay(500);
   } else {
-    if(valor<80) {
+    if(valor<30) {
       digitalWrite(ledR, LOW);
       digitalWrite(ledA, HIGH);
       digitalWrite(ledV, LOW);
+      tone(buzzer,500, 3000);
+      delay(3000);
+      noTone(buzzer);
+      delay(500);
       Serial.println("Alerta de aumento de luminosidade");
-      delay(2000);
+      delay(500);
     } else {
-      if(valor>80) {
+      if(valor>30) {
         digitalWrite(ledR, LOW);
         digitalWrite(ledA, LOW);
         digitalWrite(ledV, HIGH);
         Serial.println("Luminosiade ok");
-        delay(2000);
+        delay(500);
       }
     }
   }
