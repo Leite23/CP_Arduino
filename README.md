@@ -22,4 +22,4 @@ Resistores: Utilizados para limitar a corrente nos LEDs e no buzzer.
 # Membros:
 Guilherme Leite - RM560131
 Miguel Aguiar - RM559589
-Fernando - RM
+Fernando Reis Bispo de Santana - RM559505
